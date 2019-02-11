@@ -26,6 +26,7 @@ function create_post {
     else    
         echo "* Creating post for ${NAME}"
         # Create post.md file  
+        touch ${FILENAME}
         echo "---" >> ${FILENAME}
         echo "title: '${NAME}'" >> ${FILENAME}
         echo "layout: post" >> ${FILENAME}
